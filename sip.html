@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="sip-calculator">
+        <div class="top"> 
+            <h2>SIP CALCULATOR</h2>
+
+            <form action="#">
+                <div class="group">
+                    <div class="title">
+                        Monthly Investment
+                    </div>
+                    <input type="text" value="30000" class="sip-amount" >
+                </div>
+
+                <div class="group">
+                    <div class="title">
+                        Expected Return
+                    </div>
+                    <input type="text" value="12" class="expected-return" >
+                </div>
+
+                <div class="group">
+                    <div class="title">
+                        Time Period(in months)
+                    </div>
+                    <input type="text" value="24" class="time-period" >
+                </div>
+
+            </form>
+        </div>
+
+        <div class="result">
+            <div class="left">
+                <div class="invested-amount">
+                    <h2>Invested Amount</h2>
+                    <div class="value">123</div>
+                </div>
+
+                <div class="est-return">
+                    <h2>Estimated Return</h2>
+                    <div class="value">123</div>
+                </div>
+
+                <div class="total-value">
+                    <h2>Total Value</h2>
+                    <div class="value">123</div>
+                </div>
+
+                <button class="calculate-btn">Calculate</button>
+            </div>
+
+            <div class="right">
+                <canvas id="myChart" style="width: 400px; ;height: 400px;"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="sip.js"></script>
+</body>
+</html>
